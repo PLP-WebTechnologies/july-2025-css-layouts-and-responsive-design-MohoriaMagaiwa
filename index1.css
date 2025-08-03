@@ -1,0 +1,117 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+/* Fixed Header */
+.top-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 60px;
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 1rem;
+  z-index: 1000;
+}
+
+/* Sidebar */
+.sidebar {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  bottom: 40px;
+  width: 200px;
+  background-color: #444;
+  color: #fff;
+  padding: 1rem;
+  overflow-y: auto;
+}
+
+.sidebar nav a {
+  display: block;
+  color: #fff;
+  text-decoration: none;
+  margin: 10px 0;
+}
+
+.sidebar nav a:hover {
+  text-decoration: underline;
+}
+
+/* Footer */
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 40px;
+  background-color: #222;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+/* Main Content Area */
+main {
+  margin-left: 200px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  min-height: calc(100vh - 100px);
+  background-color: grey;
+  overflow-y: auto;
+}
+
+/* Centering #home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 100px);
+  text-align: center;
+  padding: 20px;
+  background-color: grey;
+}
+
+/* Styling for home content */
+.intro-name {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.profile-img {
+  width: 300px;
+  height: 300px;
+  border-radius: 75%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.intro-title {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Cards */
+.card {
+  padding: 2rem;
+  margin: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
